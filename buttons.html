@@ -4,77 +4,18 @@
 <!--Using . before the name of the class allows us to modify CSS style for that particular class-->
 <!--:hover and :active are to used to change style properties when we hover over the button and when we
     click on the button.-->
-<style>
-  .subscribe-button {
-    background-color: rgb(200, 0, 0);
-    color: white;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 8px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
-    transition: opacity 0.15s;
-    vertical-align: top;
-  }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buttons Practice</title>
+    <!--link is used to link css file to html file. Does not require a </> because it is a void element-->
+    <link rel="stylesheet" href="styles/buttons.css">
+  </head>
+  <body>
+    <!--Use class identifier to be able to use different CSS styles for different buttons-->
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="tweet-button">Tweet</button>
+  </body>
+</html>
 
-  .subscribe-button:hover {
-    opacity: 0.7;
-  }
-
-  .subscribe-button:active {
-    opacity: 0.5;
-  }
-
-  .join-button {
-    background-color: white;
-    border-color: rgb(6, 95, 212);
-    border-style: solid;
-    color: rgb(6, 95, 212);
-    border-width: 1px;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 10px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 16px;
-    padding-right: 16px;
-    transition: background-color 0.15s, color 0.15s;
-  }
-
-  .join-button:hover {
-    background-color: rgb(6, 95, 212);
-    color: white;
-  }
-
-  .join-button:active {
-    opacity: 0.6;
-  }
-
-  .tweet-button {
-    background-color: rgb(29,155,240);
-    color: white;
-    border: none;
-    border-radius: 18px;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 16px;
-    padding-right: 16px;
-    transition: box-shadow 0.15s;
-    vertical-align: top;
-  }
-
-  .tweet-button:hover {
-    box-shadow: 0 4px 2px rgba(94, 89, 89, 0.15);
-  }
-</style>
-
-<!--Use class identifier to be able to use different CSS styles for different buttons-->
-<button class="subscribe-button">SUBSCRIBE</button>
-<button class="join-button">JOIN</button>
-<button class="tweet-button">Tweet</button>
