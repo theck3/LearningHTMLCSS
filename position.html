@@ -6,6 +6,7 @@
   <body style="
     height: 3000px;
     padding-top: 50px;
+    padding-left: 74px;
   ">
 
     <div style="
@@ -16,7 +17,43 @@
       left: 0;
       right: 0;
       height: 50px;
-    ">header
+      z-index: 1;
+    ">
+      header
+    </div>
+
+    <div style="
+      background-color: green;
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      top: 50px;
+      width: 72px;
+    ">
+      sidebar 
+      <!-- placing an absolute inside another div. All positions right, top, left become relative to 
+          what you placed it in-->
+      <div style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        right: 10px;
+        top: 60px;
+      ">
+        absolute
+      </div>
+
+    </div>
+
+    <!--position: absolute, places things on top of things on the page. (Time stamp of youtube videos)-->
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      right: 10px;
+      top: 60px;
+    ">
+      absolute
     </div>
 
     <div style="
@@ -31,7 +68,19 @@
       background-color: lightpink;
       height: 200px;
       width: 200px;
+      position: relative;
     ">div2
+      <!--when position absolute is placed on position relative, it stays on the correct spot while 
+          scrolling on the page-->
+      <div style="
+        position: absolute;
+        background-color: black;
+        color: white;
+        right: 10px;
+        bottom: 10px;
+        ">
+        5:00
+      </div>
     </div>
   </body>
 </html>
